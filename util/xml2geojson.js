@@ -40,7 +40,7 @@ const getCityBorders = (xmlString) => {
         const coordinates = getCoordinates(xmlDoc, points)
 
         // ランダムな色を生成
-        const stroke = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        // const stroke = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
         const feature = {
           type: "Feature",
@@ -51,8 +51,8 @@ const getCityBorders = (xmlString) => {
           properties: {
             // name: `${name} 市区町村界線`,
             idref: idref,
-            stroke: stroke,
-            "stroke-width": 5
+            // stroke: stroke,
+            // "stroke-width": 5
           }
         }
 
