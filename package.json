@@ -1,0 +1,25 @@
+{
+  "name": "moj-extract-city-border",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./util/unzip.js ${npm_config_path} && node --max-old-space-size=10240 index.js ${npm_config_path}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geolonia/moj-extract-city-border.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geolonia/moj-extract-city-border/issues"
+  },
+  "homepage": "https://github.com/geolonia/moj-extract-city-border#readme",
+  "dependencies": {
+    "glob": "^10.2.2",
+    "jsdom": "^22.0.0",
+    "proj4": "^2.9.0",
+    "unzipper": "^0.10.11"
+  }
+}
